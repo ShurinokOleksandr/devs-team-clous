@@ -1,0 +1,18 @@
+{
+    "extends": [
+        "react-app",
+        "plugin:perfectionist/recommended-line-length"
+    ],
+    "plugins": [
+        "perfectionist"
+    ],
+    "rules": {
+        "perfectionist/sort-objects": [
+            "error",
+            {
+                "type": "line-length",
+                "order": "desc"
+            }
+        ],
+    }
+}
