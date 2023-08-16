@@ -1,13 +1,15 @@
+import { Header } from "src/widgets/Header";
+import {Case} from "src/widgets/Case";
+import {Main} from "src/widgets/Main";
 import {Box} from "@chakra-ui/react";
-
-import { Header } from "./widgets/Header";
 
 
 function App() {
-    const  a = {sa:'1'}
-    return (
-        <Box >
+     return (
+        <Box>
             <Header />
+            <Main />
+            <Case />
         </Box>
     )
 }
