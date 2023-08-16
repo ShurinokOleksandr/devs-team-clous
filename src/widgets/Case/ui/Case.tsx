@@ -4,7 +4,7 @@ import React from 'react';
 
 export const Case = () => {
 	return (
-		<Box bgColor={'black'} color={'white'}  >
+		<Box userSelect={'none'} bgColor={'black'} color={'white'}  >
 			<Container px={{base:'50px',xl:'0'}} maxWidth={'container.xl'} pt={'60px'}>
 				<Text fontFamily={'damn'} fontSize={'70px'}>
 					Кейси
