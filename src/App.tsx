@@ -1,3 +1,5 @@
+import { FormSection } from 'src/widgets/FormSection';
+import { Footer } from 'src/widgets/Footer';
 import { Header } from "src/widgets/Header";
 import {Case} from "src/widgets/Case";
 import {Main} from "src/widgets/Main";
@@ -10,6 +12,8 @@ function App() {
             <Header />
             <Main />
             <Case />
+            <FormSection />
+            <Footer />
         </Box>
     )
 }

@@ -5,15 +5,15 @@ import React from 'react';
 
 export const MainVideoSection = () => {
 	return (
-		<Container maxWidth={"container.xl"} px={[9,9,9,9,9,0]} py={'100px'}>
+		<Container maxWidth="container.xl" py="100px" px={0}>
 			<Box>
 				<Text
-					fontFamily={'damn'}
-					fontSize={'70px'}
+					fontFamily="DAMN"
+					fontSize="70px"
 
 				>
 					Про
-					<Text color={'blue'} as={'span'} ml={3}>
+					<Text color="blue" as="span" ml={3}>
 						OSINT
 					</Text>
 				</Text>
@@ -28,26 +28,25 @@ export const MainVideoSection = () => {
 				</Text>
 			</HStack>
 			<Center
-				flexDirection={'column'}
-				bgRepeat={'no-repeat'}
-				bgPosition={'center'}
-				objectFit={'cover'}
+				flexDirection="column"
+				bgRepeat="no-repeat"
+				bgPosition="center"
 				bgImage={VideoImg}
-				bgSize={'cover'}
-				rowGap={'20px'}
-				mt={'30px'}
-				h={'558px'}
-				w={'full'}
-
+				objectFit="cover"
+				bgSize="cover"
+				rowGap="20px"
+				h="558px"
+				mt="30px"
+				w="full"
 			>
 				<Text
-					fontSize={'20px'}
-					color={'white'}
+					fontSize={{base:'15px',lg:'20px'}}
+					color="white"
 				>
 					ДИВІТЬСЯ ВІДЕО, ЯК ЦЕ ПРАЦЮЄ
 				</Text>
-				<Button rounded={'full'} h={'78px'} w={'78px'}>
-					<Play width={'20px'} />
+				<Button rounded="full" h="78px" w="78px">
+					<Play width="20px" />
 				</Button>
 			</Center>
 		</Container>

@@ -22,7 +22,7 @@ export function DrawerLinks() {
 
 	return (
 		<>
-			<HamburgerIcon display={['flex','flex','flex','none']} _hover={{bg:'gray'}}  onClick={onOpen} color={'white'}  as={'button'} ref={btnRef}  h={4} w={4} />
+			<HamburgerIcon display={['flex','flex','flex','none']} _hover={{bg:'gray'}}  onClick={onOpen} color="white"  ref={btnRef} as="button"  w={4} h={4} />
 			<Drawer
 				finalFocusRef={btnRef}
 				onClose={onClose}
@@ -30,13 +30,13 @@ export function DrawerLinks() {
 				isOpen={isOpen}
 			>
 				<DrawerOverlay />
-				<DrawerContent bgColor={'black'} color={'white'}>
+				<DrawerContent bgColor="black" color="white">
 					<DrawerCloseButton />
 					<DrawerHeader>Навігація</DrawerHeader>
 
 					<DrawerBody  >
-						<List bgColor={'black'}   marginX={'auto'}  width={'full'} >
-							<Flex  justify={"space-between"}  direction={'column'} align={'center'} rowGap={5}>
+						<List bgColor="black"   marginX="auto"  width="full" >
+							<Flex justify="space-between" direction='column' align='center' rowGap={5}>
 								<NavLinks />
 							</Flex>
 						</List>

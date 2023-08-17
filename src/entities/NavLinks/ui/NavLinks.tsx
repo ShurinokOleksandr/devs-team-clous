@@ -1,4 +1,4 @@
-import {Links} from "src/shared/lib/Links";
+import {Links} from "src/shared/lib/lists/Links";
 import {ListItem} from "@chakra-ui/react";
 import React from 'react';
 
@@ -10,7 +10,7 @@ export const NavLinks = () => {
 					<ListItem
 						_hover={{color:'gray'}}
 						href={href}
-						as={'a'}
+						as="a"
 					>
 						{name}
 					</ListItem>

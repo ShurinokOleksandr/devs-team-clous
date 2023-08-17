@@ -1,8 +1,8 @@
+import { theme } from 'src/shared/config/theme';
 import {ChakraProvider} from "@chakra-ui/react";
 import ReactDOM from 'react-dom/client'
 import React from 'react'
 
-import {theme} from "./shared/config/theme";
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

@@ -4,13 +4,15 @@ export const theme = extendTheme({
 	colors: {
 		brand: {
 			lightGray:'#FCFCFC',
+			darkGray:'#282828',
+			border:'#505050',
 			black: "#070707",
 			white: "#FFFFFF",
 			blue:'#0006F8'
 		},
 		fonts: {
-			heading: `'damn', sans-serif`,
-			body: `'Exo_2', sans-serif`,
+			heading: `'DAMN', sans-serif`,
+			body: `'Exo 2', sans-serif`,
 		},
 	},
 })

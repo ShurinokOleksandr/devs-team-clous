@@ -6,11 +6,11 @@ export const Lang = () => {
 	return (
 		<Select
 			icon={<SelectArrow />}
-			border={"none"}
+			border="none"
 			fontSize={15}
 			color='white'
 			height={27}
-			width={85}
+			width={65}
 			size='xs'
 		>
 			<option style={{ background: 'black' }} value='option1'>UA</option>

@@ -8,11 +8,11 @@ export const Header = () => {
 		<Box
 			px={['40px','50px','60px','70px','80px']}
 			pt={['12px','20px','25px','30px','40px']}
-			bgColor={'black'}
-			color={'white'}
-			pb={'30px'}
+			bgColor="black"
+			color="white"
+			pb="30px"
 		>
-			<Box height={[450,720,750,800,830,870]} position={'relative'} maxWidth={'1360px'} mx={'auto'}>
+			<Box height={[450,720,750,800,830,870]} position="relative" maxWidth="1360px" mx="auto">
 				<HeaderNavbar />
 				<HeaderBody />
 			</Box>
