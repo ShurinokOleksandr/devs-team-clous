@@ -13,8 +13,7 @@ const textAnimation = {
 }
 export const HeaderBody = () => {
 	const { scrollYProgress } = useScroll();
-	const x = useTransform(scrollYProgress, [0, 1], [1, -2]);
-	
+	const scale = useTransform(scrollYProgress, [0, 1], [1,0]);
 	return (
 		<Flex
 			align={['center','start','start','end','end','end']}
@@ -41,12 +40,12 @@ export const HeaderBody = () => {
 				<Text
 					fontSize={['50px','100px','160px','360px','460px']}
 					verticalAlign="bottom"
-					//@ts-ignore
-					style={{ scale: x }}
 					fontWeight="medium"
 					letterSpacing={31}
-					lineHeight="none"
 					fontFamily="DAMN"
+					lineHeight="none"
+					//@ts-ignore
+					style={{scale}}
 					as={motion.p}
 					color="blue"
 				>
