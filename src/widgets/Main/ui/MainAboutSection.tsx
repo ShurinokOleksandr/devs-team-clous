@@ -14,9 +14,9 @@ export const MainAboutFirstSection = ({
 	                                      row
                                       }:MainAboutFirstSectionType) => {
 	return (
-		<Container maxWidth="container.xl" my="60px" px={0} >
-			<HStack flexDirection={{ base: "column", xl: row }}  columnGap={20}   >
-				<VStack width={{ base: 'full', xl: '55%' }} rowGap="60px">
+		<Container maxWidth="container.xl"  px={0} >
+			<HStack flexDirection={{ base: "column", xl: row }}  columnGap="96px"  mb="70px"  >
+				<VStack width={{ base: 'full', xl: '60%' }} rowGap="60px" >
 					<Box>
 						<Title text={firstTitle} />
 						<Text

@@ -8,6 +8,7 @@ export const Header = () => {
 		<Box
 			px={['40px','50px','60px','70px','80px']}
 			pt={['12px','20px','25px','30px','40px']}
+			height={{base:'650px',md:'full'}}
 			bgColor="black"
 			color="white"
 			pb="30px"

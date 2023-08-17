@@ -1,5 +1,5 @@
-import { useViewportScroll, useTransform, useScroll, motion } from 'framer-motion';
-import { Button, Text, Flex, Box } from '@chakra-ui/react';
+import { VStack, Button, Flex, Text, Box } from '@chakra-ui/react';
+import {  useTransform, useScroll, motion } from 'framer-motion';
 import React from 'react';
 
 
@@ -9,41 +9,39 @@ export const HeaderBody = () => {
 	return (
 		<Flex
 			align={['center','start','start','end','end','end']}
-			direction={['column','column','column','row']}
-			justify={['end','end','end','start']}
-			mt={['60px',0,0,0,0]}
+			direction={{base:'column',lg:'row'}}
+			height={{base:'550px',md:'full'}}
+			justify={{base:"end",lg:'start'}}
+			mt={{base:"60px",md:0}}
 			whileInView='visible'
 			initial='hidden'
 			as={motion.div}
-			height="full"
 		>
-			<Box zIndex={111}>
+			<VStack align="start" zIndex={111}>
 				<Text
 					fontSize={{base:"14px",lg:"20px"}}
- 					fontWeight="medium"
+					fontWeight="medium"
 					fontFamily="Exo 2"
 					color="lightGray"
 					opacity="60%"
 					as={motion.p}
-					ml="10px"
 				>
 					Сильні Знання. Могутні Результати. Ваша Конкурентна Перевага.
 				</Text>
 				<Text
 					fontSize={['50px','100px','160px','360px','460px']}
-					verticalAlign="bottom"
-					fontWeight="medium"
+ 					fontWeight="medium"
 					letterSpacing={31}
-					//@ts-ignore
-					style={{ scale }}
-					fontFamily="DAMN"
 					lineHeight="none"
+					fontFamily="DAMN"
+					//@ts-ignore
+					style={{scale}}
 					as={motion.p}
 					color="blue"
 				>
 					OSINT
 				</Text>
-			</Box>
+			</VStack>
 			<Box width="full" mb="115px">
 				<Button width="full" >
 					<Text  >
@@ -54,4 +52,3 @@ export const HeaderBody = () => {
 		</Flex>
 	);
 };
-

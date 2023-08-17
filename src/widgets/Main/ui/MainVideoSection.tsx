@@ -5,12 +5,11 @@ import React from 'react';
 
 export const MainVideoSection = () => {
 	return (
-		<Container maxWidth="container.xl" py="100px" px={0}>
+		<Container maxWidth="container.xl" py="100px"  >
 			<Box>
 				<Text
 					fontFamily="DAMN"
 					fontSize="70px"
-
 				>
 					Про
 					<Text color="blue" as="span" ml={3}>
@@ -32,7 +31,6 @@ export const MainVideoSection = () => {
 				bgRepeat="no-repeat"
 				bgPosition="center"
 				bgImage={VideoImg}
-				objectFit="cover"
 				bgSize="cover"
 				rowGap="20px"
 				h="558px"

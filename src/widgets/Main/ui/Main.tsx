@@ -7,7 +7,7 @@ import { MainVideoSection } from './MainVideoSection';
 
 export function Main() {
     return (
-        <Container maxWidth="container.xl"   pr={0}>
+        <Container maxWidth="container.xl" >
             <MainVideoSection />
             <Box>
                 <Text
