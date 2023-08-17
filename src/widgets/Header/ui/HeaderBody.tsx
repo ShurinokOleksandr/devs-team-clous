@@ -1,18 +1,18 @@
-import { useTransform, useScroll, motion } from 'framer-motion';
+import {    useTransform, useScroll, motion } from 'framer-motion';
 import { Button, Text, Flex, Box } from '@chakra-ui/react';
 import React from 'react';
 
+
 export const HeaderBody = () => {
 	const { scrollYProgress } = useScroll();
-	const scale = useTransform(scrollYProgress, [0, 1], [1,-3]);
+	const scale = useTransform(scrollYProgress, [0, 1], [1, 0]);
 	return (
 		<Flex
 			align={['center','start','start','end','end','end']}
 			direction={['column','column','column','row']}
 			justify={['end','end','end','start']}
 			mt={['60px',0,0,0,0]}
-			whileInView='visible'
-			initial='hidden'
+			
 			as={motion.div}
 			height="full"
 		>
@@ -31,12 +31,12 @@ export const HeaderBody = () => {
 				<Text
 					fontSize={['50px','100px','160px','360px','460px']}
 					verticalAlign="bottom"
-					//@ts-ignore
-					style={{scaleX:scale}}
 					fontWeight="medium"
 					letterSpacing={31}
 					fontFamily="DAMN"
 					lineHeight="none"
+					//@ts-ignore
+					style={{ scale }}
 					as={motion.p}
 					color="blue"
 				>
