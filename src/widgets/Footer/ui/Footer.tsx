@@ -4,10 +4,10 @@ import React from 'react';
 export const Footer = () => {
     return (
         <Box bgColor="black" as="footer">
-            <Container maxWidth="container.xl" color='white' p={0} >
-                <Grid templateColumns={{ base: 'repeat(1, 1fr)',md: 'repeat(3, 1fr)' , xl: 'repeat(3, 1fr)' }} color='white' pt={10} mb={15}>
+            <Container maxWidth="container.xl" color='white' mx="auto"  >
+                <Grid templateColumns={{ base: 'repeat(1, 1fr)',md: 'repeat(3, 1fr)',xl: 'repeat(3, 1fr)' }} color='white' pt={10} mb={15}>
                     <GridItem colSpan={1} >
-                        <Flex justify={{base: 'center',md:'start' }} columnGap={{base: 20 }} mb={15}>
+                        <Flex justify={{base: 'start',md:'start' }} columnGap={{md: 20 }} mb={15}>
                             <Box>
                                 <Text
                                     fontSize={{ base:'150px',sm:'250px',md:'200px' }}
@@ -31,7 +31,7 @@ export const Footer = () => {
                     </GridItem>
                     <GridItem pl={{base:'0px',md:'31px' }} colSpan={1}>
                         <Flex justify={{lg: 'space-between',base:'start' }} columnGap={{base: 20 }} mb={15}>
-                            <Box display={{base:'flex',md:'block'}} flexWrap="wrap" columnGap={10} px="30px" pt="10px">
+                            <Box display={{base:'flex',md:'block'}} px={{ md:'30px',base:0 }} flexWrap="wrap" columnGap={10} pt="10px">
                                 <Text
                                     textTransform="uppercase"
                                     fontWeight="medium"
@@ -52,7 +52,7 @@ export const Footer = () => {
                         </Flex>
                     </GridItem>
                     <GridItem colSpan={1}>
-                        <Box px="30px">
+                        <Box px={{ md:'30px',base:0 }}>
                             <Text
                                 textTransform="uppercase"
                                 fontWeight="medium"
