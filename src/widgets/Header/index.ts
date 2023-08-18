@@ -1,3 +1,3 @@
-export {Header} from "./ui/Header";
+export {MainSection} from "./ui/Header";
 
 

@@ -75,37 +75,37 @@ export const Clients = () => {
                     
                 >
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
+                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
