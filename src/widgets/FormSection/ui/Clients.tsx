@@ -8,10 +8,10 @@ import React from 'react';
 import 'swiper/css';
 
 export const Clients = () => {
+    
     const { onChangeSlide,isStart,isEnd} = useSwiperClick()
+    
     const  {clickNext,clickPrev,swiperRef} = useChangeSwiperSlide()
-    
-    
     
     return (
         <Box userSelect="none">
@@ -41,25 +41,40 @@ export const Clients = () => {
                     />
                 </Flex>
             </HStack>
-            <Center px="1.6vw">
+            <Center px={{ base:'5vw', xl:'0' }}>
                 <Swiper
                     breakpoints={{
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                            
-                        },
-                        570: {
-                            slidesPerView: 2,
+                        910: {
+                            slidesPerView: 2.6,
                             spaceBetween: 20,
                         },
-                        900: {
-                            slidesPerView: 3,
-                            spaceBetween: 40,
+                        801: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 10,
                         },
                         1200:{
+                            slidesPerView: 3.5,
+                            spaceBetween: 10,
+                        },
+                        550:{
+                            slidesPerView: 1.6,
+                            spaceBetween: 10,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                        },
+                        1285:{
                             slidesPerView: 4,
-                            spaceBetween: 30,
+                            spaceBetween: 10,
+                        },
+                        675:{
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+                        419:{
+                            slidesPerView: 1.3,
+                            
                         },
                         0:{
                             slidesPerView: 1,
@@ -70,42 +85,39 @@ export const Clients = () => {
                     }}
                     onActiveIndexChange={(value) => onChangeSlide(value)}
                     className="mySwiper"
-                    spaceBetween={10}
-                    slidesPerView={4}
-                    
                 >
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
-                        <Box shadow="outline" height='125px' py="50px" w="300px" px="70px">
+                        <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
                             <Image src={SliderImg} />
                         </Box>
                     </SwiperSlide>
@@ -116,7 +128,6 @@ export const Clients = () => {
                     </SwiperSlide>
                 </Swiper>
             </Center>
-            
         </Box>
     );
 };

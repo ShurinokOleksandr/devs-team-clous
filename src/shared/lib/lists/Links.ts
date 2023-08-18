@@ -4,6 +4,10 @@ export const Links = [
 		href:'/'
 	},
 	{
+		name:'Послуги',
+		href:'/'
+	},
+	{
 		name:'Про OSINT',
 		href:'/'
 	},

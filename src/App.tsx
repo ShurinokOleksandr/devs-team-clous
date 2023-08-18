@@ -1,19 +1,16 @@
-import { MainSection } from 'src/widgets/Header/ui/Header';
 import { FormSection } from 'src/widgets/FormSection';
-import Navbar from 'src/widgets/Navbar/Navbar';
+import { Header } from 'src/widgets/Header';
 import { Footer } from 'src/widgets/Footer';
-import { Case } from 'src/widgets/Case';
 import { Main } from 'src/widgets/Main';
-import { Box } from '@chakra-ui/react';
+ import { Case } from 'src/widgets/Case';
 import React from 'react';
 
 
 function App() {
     return (
         <>
-            <Navbar />
+            <Header />
             <main>
-                <MainSection />
                 <Main />
                 <Case />
                 <FormSection />

@@ -1,6 +1,7 @@
-import {CaseSwiper} from "src/widgets/Case/ui/CaseSwiper";
 import {Container, Text, Box} from "@chakra-ui/react";
 import React from 'react';
+
+import {CaseSwiper} from "./CaseSwiper";
 
 export const Case = () => {
 	return (

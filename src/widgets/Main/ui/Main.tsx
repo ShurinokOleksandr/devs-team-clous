@@ -23,6 +23,7 @@ export function Main() {
             {
                 MainTextAbout.map((item) =>
                     <MainAboutFirstSection
+                        key={item.firstTitle}
                         {...item}
                     />
                 )

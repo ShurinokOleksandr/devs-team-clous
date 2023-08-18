@@ -1,6 +1,21 @@
-import { FormErrorMessage, FormControl, Textarea, GridItem, Button, Input, Text, Grid, Box } from '@chakra-ui/react';
+import {
+    InputRightElement,
+    FormErrorMessage,
+    FormControl,
+    InputGroup,
+    Textarea,
+    GridItem,
+    Button,
+    Input,
+    Text,
+    Grid,
+    Box
+} from '@chakra-ui/react';
+import { ReactComponent as UnValidIcon } from 'src/shared/assets/unvalidForm.svg';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import React from 'react';
+import React, { useState } from 'react';
+
+import { FormResult } from './FormResult';
 
 type Inputs = {
     phoneNumber: number,
@@ -10,81 +25,173 @@ type Inputs = {
     email:string,
 };
 export const ContactForm = () => {
-    const { formState: { errors }, handleSubmit, register } = useForm<Inputs>();
-    const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+    const [isSentForm,setIsSentForm] = useState(false)
+    const { formState: { errors }, handleSubmit, register, reset } = useForm<Inputs>();
+    const onSubmit: SubmitHandler<Inputs> = data => {
+        setIsSentForm(isSentForm)
+        console.log(data)
+        reset()
+    };
     
     return (
-        <Box >
-            <Text textTransform="uppercase" fontFamily="DAMN" fontSize="44px" >
-                Зв'язатися з нами
-            </Text>
-            <Text fontFamily="Exo 2">
-                Маєте запитання або зацікавлені в наших послугах OSINT? Залиште свої контактні дані, і наша команда експертів з радістю допоможе вам.
-            </Text>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <FormControl  >
-                    <Grid
-                        templateColumns='repeat(4, 1fr)'
-                        templateRows='repeat(2, 1fr)'
-                        columnGap="30px"
-                        rowGap="15px"
-                        my="30px"
-                    >
-                        <GridItem colSpan={{base:4,md:2 }}>
-                            <Input
-                                borderColor={errors.name ? "red" : 'brand.border'}
-                                rounded="4px"
-                                h="56px"
-                                {...register("name",{ required: true })}
-                                placeholder='Ваше імʼя *'
-                                color="brand.border"
-                            />
-                        </GridItem>
-                        <GridItem colSpan={{base:4,md:2 }}>
-                            <Input borderColor={errors.phoneNumber ? "red" : 'brand.border'}
-                                   rounded="4px"
-                                   type="tel" h="56px"
-                                   {...register("phoneNumber", { required: true })}
-                                   placeholder='Номер телефону *'
-                                   color="brand.border"
-                            />
-                        </GridItem>
-                        <GridItem colSpan={{base:4,md:2 }}>
-                            <Input borderColor={errors.email ? "red" : 'brand.border'}
-                                   rounded="4px"
-                                   type="email" h="56px"
-                                   {...register("email", { required: true })}
-                                   placeholder='Email *'
-                                   color="brand.border"
-                            />
-                        </GridItem>
-                        <GridItem colSpan={{base:4,md:2 }}>
-                            <Input borderColor={errors.company ? "red" : 'brand.border'}
-                                   rounded="4px"
-                                   h="56px"
-                                   {...register("company", { required: true })}
-                                   placeholder='Ваша компанія'
-                                   color="brand.border"
-                            />
-                        </GridItem>
-                        <GridItem colSpan={4}>
-                            <Textarea
-                                {...register("reviews", { required: true })}
-                                borderColor={errors.reviews ? "red" : 'brand.border'}
-                                placeholder='Залишіть повідомлення'
-                                rounded="4px" h="118px"
-                            />
-                        </GridItem>
-                    </Grid>
-                    <FormErrorMessage>
-                        {errors.name && errors.name.message}
-                    </FormErrorMessage>
-                </FormControl>
-                <Button _hover={{bgColor:'blue.500'}} display="block" bgColor="blue" color="white" type="submit" w="full">
-                    Відправити повідомлення
-                </Button>
-            </form>
-        
+        <Box bgColor="white" shadow="xl">
+            {
+                !isSentForm ?
+                    <>
+                        <Text textTransform="uppercase" fontFamily="DAMN" fontSize="44px" >
+                            Зв'язатися з нами
+                        </Text>
+                        <Text fontFamily="Exo 2">
+                            Маєте запитання або зацікавлені в наших послугах OSINT? Залиште свої контактні дані, і наша команда експертів з радістю допоможе вам.
+                        </Text>
+                        <form  onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+                            <FormControl isInvalid={!!errors.name}  >
+                                <Grid
+                                    templateColumns='repeat(4, 1fr)'
+                                    templateRows='repeat(2, 1fr)'
+                                    columnGap="30px"
+                                    rowGap="15px"
+                                    my="30px"
+                                >
+                                    <GridItem colSpan={{base:4,md:2 }}>
+                                        <InputGroup textAlign="center">
+                                            <Input
+                                                borderColor="brand.border"
+                                                placeholder="Ваше імʼя *"
+                                                color="brand.border"
+                                                rounded="4px"
+                                                type="text"
+                                                h="56px"
+                                                {...register("name", { minLength: { message: 'Minimum length should be 4', value: 4 }, required: true, })}
+                                            />
+                                            {
+                                                errors.name &&
+                                                <InputRightElement  top="13%">
+                                                    <UnValidIcon   />
+                                                </InputRightElement>
+                                            }
+                                        </InputGroup>
+                                        <FormErrorMessage>
+                                            <Text ml={2}>
+                                                {errors.name && errors.name.message || 'Write down name!'}
+                                            </Text>
+                                        </FormErrorMessage>
+                                    </GridItem>
+                                    <GridItem colSpan={{base:4,md:2 }}>
+                                        <InputGroup textAlign="center">
+                                            <Input
+                                                borderColor="brand.border"
+                                                rounded="4px"
+                                                type="tel"
+                                                h="56px"
+                                                {...register("phoneNumber", {
+                                                    minLength:
+                                                        {
+                                                            message: 'Minimum length should be 8 and only numbers',
+                                                            value: 8
+                                                        },
+                                                    pattern: {
+                                                        message: 'Please enter a number',
+                                                        value: /^[0-9]+$/,
+                                                    },
+                                                    required: true,
+                                                })}
+                                                placeholder='Номер телефону *'
+                                                color="brand.border"
+                                            />
+                                            {
+                                                errors.phoneNumber &&
+                                                <InputRightElement top="13%">
+                                                    <UnValidIcon   />
+                                                </InputRightElement>
+                                            }
+                                        
+                                        </InputGroup>
+                                        <FormErrorMessage>
+                                            <Text ml={2}>
+                                                {errors.phoneNumber && errors.phoneNumber.message || 'Write down phone!'}
+                                            </Text>
+                                        </FormErrorMessage>
+                                    </GridItem>
+                                    <GridItem colSpan={{base:4,md:2 }}>
+                                        <InputGroup textAlign="center">
+                                            <Input borderColor="brand.border"
+                                                   rounded="4px"
+                                                   type="email" h="56px"
+                                                   {...register("email", { required: true })}
+                                                   placeholder='Email *'
+                                                   color="brand.border"
+                                            />
+                                            {
+                                                errors.email &&
+                                                <InputRightElement  top="13%">
+                                                    <UnValidIcon   />
+                                                </InputRightElement>
+                                            }
+                                        
+                                        </InputGroup>
+                                        <FormErrorMessage>
+                                            <Text ml={2}>
+                                                {errors.email && errors.email.message || "Write down email!"}
+                                            </Text>
+                                        </FormErrorMessage>
+                                    </GridItem>
+                                    <GridItem colSpan={{base:4,md:2 }}>
+                                        <InputGroup textAlign="center">
+                                            <Input borderColor="brand.border"
+                                                   rounded="4px"
+                                                   h="56px"
+                                                   {...register("company", { required: true })}
+                                                   placeholder='Ваша компанія'
+                                                   color="brand.border"
+                                            />
+                                            {
+                                                errors.company && <InputRightElement  top="13%">
+                                                    <UnValidIcon   />
+                                                </InputRightElement>
+                                            }
+                                        
+                                        </InputGroup>
+                                        
+                                        <FormErrorMessage>
+                                            <Text ml={2}>
+                                                {errors.company && errors.company.message|| "Write down company!"}
+                                            </Text>
+                                        </FormErrorMessage>
+                                    </GridItem>
+                                    <GridItem colSpan={4}>
+                                        <InputGroup textAlign="center">
+                                            <Textarea
+                                                resize="none"
+                                                {...register("reviews", { required: true })}
+                                                placeholder='Залишіть повідомлення'
+                                                borderColor="brand.border"
+                                                rounded="4px" h="118px"
+                                            />
+                                            {
+                                                errors.reviews && <InputRightElement  top="10%">
+                                                    <UnValidIcon   />
+                                                </InputRightElement>
+                                            }
+                                        
+                                        </InputGroup>
+                                        
+                                        <FormErrorMessage>
+                                            <Text ml={2}>
+                                                {errors.reviews && errors.reviews.message|| "Write down reviews!"}
+                                            </Text>
+                                        </FormErrorMessage>
+                                    </GridItem>
+                                </Grid>
+                            
+                            </FormControl>
+                            <Button _hover={{bgColor:'blue.500'}} display="block" bgColor="blue" color="white" type="submit" w="full">
+                                Відправити повідомлення
+                            </Button>
+                        </form>
+                    </>
+                    : <FormResult />
+            }
         </Box>
     );
 };

@@ -9,7 +9,8 @@ import {
 	Drawer,
 	Button,
 	List,
-	Flex
+	Flex,
+    Box
 } from "@chakra-ui/react";
 import { NavLinks } from "src/entities/NavLinks";
 import {HamburgerIcon} from '@chakra-ui/icons'
@@ -21,8 +22,8 @@ export function DrawerLinks() {
 	const btnRef =  useRef<HTMLButtonElement | null>(null)
 
 	return (
-		<>
-			<HamburgerIcon display={['flex','flex','flex','none']} _hover={{bg:'gray'}}  onClick={onOpen} color="white"  ref={btnRef} as="button"  w={4} h={4} />
+		<Box >
+			<HamburgerIcon display={{base:'flex',xl:"none"}} _hover={{bg:'gray'}}  onClick={onOpen} color="white"  ref={btnRef} as="button"  w={4} h={4} />
 			<Drawer
 				finalFocusRef={btnRef}
 				onClose={onClose}
@@ -49,6 +50,6 @@ export function DrawerLinks() {
 					</DrawerFooter>
 				</DrawerContent>
 			</Drawer>
-		</>
+		</Box>
 	)
 }
