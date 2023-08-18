@@ -31,7 +31,7 @@ export const HeaderMainSection = () => {
                                     fontSize={{base:"20px",xl:"20px"}}
                                     w={{ base:"full",md:'700px' }}
                                     left={{ xl:'10px',base:0 }}
-                                    mb={{xl:"550px",base:0}}
+                                    mb={{xl:"500px",base:0}}
                                     position="relative"
                                     fontWeight="medium"
                                     opacity="60%"
