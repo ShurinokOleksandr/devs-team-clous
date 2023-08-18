@@ -4,17 +4,15 @@ import {
 	DrawerOverlay,
 	DrawerContent,
 	DrawerHeader,
-	DrawerFooter,
 	DrawerBody,
 	Drawer,
-	Button,
 	List,
 	Flex,
-    Box
-} from "@chakra-ui/react";
-import { NavLinks } from "src/entities/NavLinks";
-import {HamburgerIcon} from '@chakra-ui/icons'
-import {useRef} from "react";
+	Box
+} from '@chakra-ui/react';
+import { NavLinks } from 'src/entities/NavLinks';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { useRef } from 'react';
 
 
 export function DrawerLinks() {
@@ -23,7 +21,19 @@ export function DrawerLinks() {
 
 	return (
 		<Box >
-			<HamburgerIcon display={{base:'flex',xl:"none"}} _hover={{bg:'gray'}}  onClick={onOpen} color="white"  ref={btnRef} as="button"  w={4} h={4} />
+			<HamburgerIcon
+				display={{base:'block',xl:"none"}}
+				_hover={{bg:'blue'}}
+				cursor="pointer"
+				onClick={onOpen}
+				rounded="full"
+				color="white"
+				ref={btnRef}
+				as="button"
+				h={10}
+				w={10}
+				p={2}
+			/>
 			<Drawer
 				finalFocusRef={btnRef}
 				onClose={onClose}
@@ -42,12 +52,6 @@ export function DrawerLinks() {
 							</Flex>
 						</List>
 					</DrawerBody>
-
-					<DrawerFooter>
-						<Button onClick={onClose} variant='outline' mr={3}>
-							Cancel
-						</Button>
-					</DrawerFooter>
 				</DrawerContent>
 			</Drawer>
 		</Box>

@@ -5,7 +5,7 @@ import React from 'react';
 
 export const MainVideoSection = () => {
 	return (
-		<Container maxWidth="container.xl" py="100px"  >
+		<Container maxWidth="container.xl" py="100px" px={0} >
 			<Box>
 				<Text
 					fontFamily="DAMN"

@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react"
-
 export const theme = extendTheme({
 	colors: {
 		brand: {
@@ -11,8 +10,8 @@ export const theme = extendTheme({
 			blue:'#0006F8'
 		},
 		fonts: {
-			heading: `'DAMN', sans-serif`,
-			body: `'Exo 2', sans-serif`,
+			heading: `'DAMN' `,
+			body: `'Exo 2'`,
 		},
 	},
 })

@@ -5,9 +5,10 @@ import React from 'react';
 export const HeaderMainSection = () => {
     return (
         <Box
-            pt={['12px','20px','25px','30px','40px']}
             px={['40px','50px','60px','70px','80px']}
+            pt={['12px','20px','25px','30px','40px']}
             height={[450,620,750,750]}
+            fontFamily="Exo 2"
             bgColor="black"
             color="white"
             as="header"
@@ -20,21 +21,20 @@ export const HeaderMainSection = () => {
                             direction={{base:'column','xl':'row'}}
                             justify={{base:"center",xl:'start'}}
                             align={{base:"center",xl:'end'}}
-                            height={[450,620,750,750]}
+                            height={[550,620,750,750]}
                             gap={{base:"20px",xl:'0'}}
                             mt={2}
                         >
                             <VStack  display="flex" align="start" zIndex={1001}>
                                 <Text
                                     textAlign={{base:"center",xl:'start'}}
-                                    fontSize={{base:"14px",xl:"20px"}}
-                                    w={{ base:"full",md:'600px' }}
-                                    mb={{xl:"500px",base:0}}
-                                    fontWeight="medium"
+                                    fontSize={{base:"20px",xl:"20px"}}
+                                    w={{ base:"full",md:'700px' }}
+                                    left={{ xl:'10px',base:0 }}
+                                    mb={{xl:"550px",base:0}}
                                     position="relative"
-                                    fontFamily="Exo 2"
+                                    fontWeight="medium"
                                     opacity="60%"
-                                    left="-10px"
                                 >
                                     Сильні Знання. Могутні Результати. Ваша Конкурентна Перевага.
                                 </Text>

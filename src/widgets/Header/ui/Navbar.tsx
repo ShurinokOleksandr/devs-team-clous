@@ -18,7 +18,7 @@ export  const Navbar = () => {
         base:'0px'
     })
     const responsiveXPositionForAnimation = useBreakpointValue({
-        base:'45px',
+        base:'65px',
         lg:'0',
         
     })
@@ -48,13 +48,13 @@ export  const Navbar = () => {
                     <Box>
                         <Box
                             style={{fontSize:`${font}px`,x:posX,y:posY }}
-                            lineHeight={{base:'25px',xl: '37px' }}
+                            lineHeight={{base:'47px',xl: '37px' }}
+                            left={{ base:'10px', xl:'-10px' }}
                             letterSpacing="0.03em"
                             fontWeight="medium"
                             position="absolute"
                             fontFamily="DAMN"
                             as={motion.h1}
-                            left="-10px"
                             color="blue"
                         >
                             OSINT

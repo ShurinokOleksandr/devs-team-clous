@@ -15,10 +15,10 @@ export const Clients = () => {
     
     return (
         <Box userSelect="none">
-            <HStack justify="space-between" px={{base: 5,lg:0 }}>
+            <HStack justify="space-between" px={{ base:4,xl:1 }}>
                 <Text
+                    fontSize={{ base:'60px',md:"70px" }}
                     fontFamily="DAMN"
-                    fontSize="70px"
                 >
                     Нашi кліенти
                 </Text>
@@ -48,7 +48,7 @@ export const Clients = () => {
                             spaceBetween: 20,
                         },
                         801: {
-                            slidesPerView: 2.5,
+                            slidesPerView: 2.3,
                             spaceBetween: 10,
                         },
                         1200:{
@@ -71,8 +71,12 @@ export const Clients = () => {
                             slidesPerView: 2,
                             spaceBetween: 10,
                         },
+                        520:{
+                            slidesPerView: 1.5,
+                            
+                        },
                         419:{
-                            slidesPerView: 1.3,
+                            slidesPerView: 1.2,
                             
                         },
                         0:{
