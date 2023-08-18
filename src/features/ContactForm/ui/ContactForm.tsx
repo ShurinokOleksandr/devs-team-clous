@@ -34,7 +34,7 @@ export const ContactForm = () => {
     };
     
     return (
-        <Box bgColor="white" shadow="xl">
+        <Box bgColor="white">
             {
                 !isSentForm ?
                     <>
@@ -183,7 +183,6 @@ export const ContactForm = () => {
                                         </FormErrorMessage>
                                     </GridItem>
                                 </Grid>
-                            
                             </FormControl>
                             <Button _hover={{bgColor:'blue.500'}} display="block" bgColor="blue" color="white" type="submit" w="full">
                                 Відправити повідомлення

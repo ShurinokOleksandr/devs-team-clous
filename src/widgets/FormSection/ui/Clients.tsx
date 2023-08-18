@@ -15,7 +15,7 @@ export const Clients = () => {
     
     return (
         <Box userSelect="none">
-            <HStack justify="space-between" px={5}>
+            <HStack justify="space-between" px={{base: 5,lg:0 }}>
                 <Text
                     fontFamily="DAMN"
                     fontSize="70px"
@@ -30,7 +30,6 @@ export const Clients = () => {
                         stroke="black"
                         height="24px"
                         width="24px"
-                    
                     />
                     <Arrow
                         opacity={isEnd ? '15%' :  '100%'}

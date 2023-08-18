@@ -10,7 +10,14 @@ export const FormSection = () => {
         <Container maxWidth="container.xl" position="relative" my="60px" px={0} >
             <HStack flexDirection={{ base: "column", xl: 'row' }} mb='100px' >
                 <Image src={ContactImg} />
-                <VStack position={{base:'static',xl:'absolute'}} right={{base: 'auto', lg: '-20px'}} width={{base:'full',xl:'700px' }} bgColor="white" zIndex={1} p="30px">
+                <VStack
+                    position={{base:'static',xl:'absolute'}}
+                    right={{base: 'auto', lg: '0px'}}
+                    width={{base:'full',xl:'700px' }}
+                    bgColor="white"
+                    zIndex={1}
+                    p="30px"
+                >
                     <ContactForm />
                 </VStack>
             </HStack>
@@ -18,4 +25,3 @@ export const FormSection = () => {
         </Container>
     );
 };
-
