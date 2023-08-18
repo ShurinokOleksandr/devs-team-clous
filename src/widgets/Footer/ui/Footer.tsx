@@ -3,8 +3,8 @@ import React from 'react';
 
 export const Footer = () => {
     return (
-        <Box bgColor="black">
-            <Container maxWidth="container.xl"  color='white' p={5}>
+        <Box bgColor="black" as="footer">
+            <Container maxWidth="container.xl" color='white' p={0} >
                 <Grid templateColumns={{ base: 'repeat(1, 1fr)',md: 'repeat(3, 1fr)' , xl: 'repeat(3, 1fr)' }} color='white' pt={10} mb={15}>
                     <GridItem colSpan={1} >
                         <Flex justify={{base: 'center',md:'start' }} columnGap={{base: 20 }} mb={15}>
