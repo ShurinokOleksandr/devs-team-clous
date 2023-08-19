@@ -6,7 +6,7 @@ import {CaseSwiper} from "./CaseSwiper";
 export const Case = () => {
 	return (
 		<Box userSelect="none" bgColor="black" color="white"  >
-			<Container px={{base:'50px',xl:'0'}} maxWidth="container.xl" py="60px">
+			<Container px={{base:'50px',xl:3}} maxWidth="container.xl" py="60px" >
 				<Text
 					fontSize={{ base:'50px',md:'70px' }}
 					textTransform="uppercase"
