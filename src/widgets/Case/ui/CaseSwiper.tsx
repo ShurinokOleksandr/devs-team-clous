@@ -36,14 +36,14 @@ export  const CaseSwiper = () => {
 								>
 									Результати
 								</Text>
-								<UnorderedList color="lightGray" fontSize="18px" pl="20px">
+								<UnorderedList color="lightGray" fontSize="18px" role="list" pl="20px">
 									<ListItem
 										lineHeight="21px"
 										my="25px"
 									>
 										Збільшення частоти позитивних згадок про бренд в соціальних мережах та ЗМІ.
 									</ListItem>
-									<Divider />
+									<Divider  />
 									<ListItem
 										lineHeight="21px"
 										my="25px"

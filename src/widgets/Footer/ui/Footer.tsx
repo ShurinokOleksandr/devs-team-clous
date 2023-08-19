@@ -1,4 +1,17 @@
-import { Container, ListItem, GridItem, Divider, Center, Button, Text, List, Grid, Flex, Box } from '@chakra-ui/react';
+import {
+    Container,
+    GridItem,
+    ListItem,
+    Divider,
+    Button,
+    Center,
+    Link,
+    Flex,
+    Grid,
+    List,
+    Text,
+    Box
+} from '@chakra-ui/react';
 import React from 'react';
 
 export const Footer = () => {
@@ -17,12 +30,16 @@ export const Footer = () => {
                                 >
                                     OSINT
                                 </Text>
-                                <List columnGap='20px' display="flex" >
-                                    <ListItem href="/" as="a">
-                                        Instagram
+                                <List columnGap='20px' display="flex" role="list" >
+                                    <ListItem >
+                                        <Link href="/">
+                                            Instagram
+                                        </Link>
                                     </ListItem>
-                                    <ListItem href="/" as="a">
-                                        Facebook
+                                    <ListItem >
+                                        <Link href="/">
+                                            Facebook
+                                        </Link>
                                     </ListItem>
                                 </List>
                             </Box>
