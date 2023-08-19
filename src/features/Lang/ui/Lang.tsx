@@ -14,14 +14,16 @@ export const Lang = () => {
 		<Select
 			icon={<SelectArrow transform={`${isSelectOpen ? 'rotate(180)' : ''}`}  />}
 			onClick={() => setIsSelectOpen(!isSelectOpen)}
+			aria-labelledby="pass2Label"
 			aria-label="Lang"
-			color='white'
-			fontSize={15}
+			role="listbox"
 			border="none"
+			fontSize={15}
+			color='white'
 			height={27}
 			width={20}
-			size='xs'
 			ref={ref}
+			size='xs'
 		>
 			<option style={{ background: 'black', padding: '5px'   }} value='option1' label="UA">UA</option>
 			<option style={{ background: 'black', padding: '5px'    }} value='option2' label="EN">EN</option>
