@@ -18,12 +18,12 @@ export const Lang = () => {
 			fontSize={15}
 			border="none"
 			height={27}
-			width={65}
+			width={20}
 			size='xs'
 			ref={ref}
 		>
-			<option style={{ background: 'black' }} value='option1'>UA</option>
-			<option style={{ background: 'black' }} value='option2'>EN</option>
+			<option style={{ background: 'black', padding: '20px'   }} value='option1'>UA</option>
+			<option style={{ background: 'black', padding: '20px'    }} value='option2'>EN</option>
 		</Select>
 	);
 };

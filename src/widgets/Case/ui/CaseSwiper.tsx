@@ -1,9 +1,10 @@
-import { UnorderedList, Container, ListItem, Divider, HStack, Center, Image, Text, Box } from '@chakra-ui/react';
+import { UnorderedList, Container, ListItem, Divider, HStack, Center, Text, Box } from '@chakra-ui/react';
 import { useChangeSwiperSlide } from 'src/shared/lib/hooks/useChangeSwiperSlide';
 import { ReactComponent as Arrow } from 'src/shared/assets/arrow-right.svg';
 import { useSwiperClick } from 'src/shared/lib/hooks/useSwiperClick';
 import AboutImg from 'src/shared/assets/result.jpg';
 import { SwiperSlide, Swiper } from 'swiper/react';
+import Image from 'react-image-webp';
 import React from 'react';
 import 'swiper/css';
 
@@ -58,13 +59,17 @@ export  const CaseSwiper = () => {
 									</ListItem>
 								</UnorderedList>
 							</Box>
-							<Image src={AboutImg} />
+							<Image
+								webp={AboutImg}
+								src={AboutImg}
+							/>
+							
 						</HStack>
 					</Container>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Container  maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
-						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} align={{base:'start',xl:'center'}}   columnGap="30px"   >
+					<Container   maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
+						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} columnGap="30px"   align="center"   >
 							<Box  width={{basa:'70%',xl:'55%'}}>
 								<Text
 									textTransform="uppercase"
@@ -95,13 +100,17 @@ export  const CaseSwiper = () => {
 									</ListItem>
 								</UnorderedList>
 							</Box>
-							<Image src={AboutImg} />
+							<Image
+								webp={AboutImg}
+								src={AboutImg}
+							/>
+						
 						</HStack>
 					</Container>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Container  maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
-						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} align={{base:'start',xl:'center'}}   columnGap="30px"   >
+					<Container   maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
+						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} columnGap="30px"   align="center"   >
 							<Box  width={{basa:'70%',xl:'55%'}}>
 								<Text
 									textTransform="uppercase"
@@ -132,13 +141,17 @@ export  const CaseSwiper = () => {
 									</ListItem>
 								</UnorderedList>
 							</Box>
-							<Image src={AboutImg} />
+							<Image
+								webp={AboutImg}
+								src={AboutImg}
+							/>
+						
 						</HStack>
 					</Container>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Container  maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
-						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} align={{base:'start',xl:'center'}}   columnGap="30px"   >
+					<Container   maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
+						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} columnGap="30px"   align="center"   >
 							<Box  width={{basa:'70%',xl:'55%'}}>
 								<Text
 									textTransform="uppercase"
@@ -169,13 +182,17 @@ export  const CaseSwiper = () => {
 									</ListItem>
 								</UnorderedList>
 							</Box>
-							<Image src={AboutImg} />
+							<Image
+								webp={AboutImg}
+								src={AboutImg}
+							/>
+						
 						</HStack>
 					</Container>
 				</SwiperSlide>
 				<SwiperSlide>
-					<Container  maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
-						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} align={{base:'start',xl:'center'}}   columnGap="30px"   >
+					<Container   maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
+						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} columnGap="30px"   align="center"   >
 							<Box  width={{basa:'70%',xl:'55%'}}>
 								<Text
 									textTransform="uppercase"
@@ -206,7 +223,11 @@ export  const CaseSwiper = () => {
 									</ListItem>
 								</UnorderedList>
 							</Box>
-							<Image src={AboutImg} />
+							<Image
+								webp={AboutImg}
+								src={AboutImg}
+							/>
+						
 						</HStack>
 					</Container>
 				</SwiperSlide>

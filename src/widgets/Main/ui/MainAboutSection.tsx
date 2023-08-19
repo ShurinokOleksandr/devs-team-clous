@@ -1,6 +1,7 @@
-import { Container, VStack, HStack, Image, Text, Box } from '@chakra-ui/react';
 import { MainAboutFirstSectionType } from 'src/shared/types/MainTextAbout';
+import { Container, VStack, HStack, Text, Box } from '@chakra-ui/react';
 import { Title } from 'src/shared/ui';
+import Image from 'react-image-webp';
 import React from 'react';
 
 
@@ -43,8 +44,18 @@ export const MainAboutFirstSection = ({
 						</Text>
 					</Box>
 				</VStack>
-			 
-				<Image objectFit='cover' src={image}   w="full" />
+				<Box
+					width={{base:'full',md:'700px'}}
+				>
+					<Image
+						width="full"
+						//@ts-ignore
+						webp={image}
+						src={image}
+					/>
+				</Box>
+				
+				{/*<Image objectFit='cover' src={image}   w="full" />*/}
 			</HStack>
 		</Container>
 	);

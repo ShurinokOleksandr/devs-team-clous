@@ -1,9 +1,10 @@
 import { useChangeSwiperSlide } from 'src/shared/lib/hooks/useChangeSwiperSlide';
 import { ReactComponent as Arrow } from 'src/shared/assets/arrow-right.svg';
-import { Center, HStack, Image, Flex, Text, Box } from '@chakra-ui/react';
 import { useSwiperClick } from 'src/shared/lib/hooks/useSwiperClick';
+import { Center, HStack, Flex, Text, Box } from '@chakra-ui/react';
 import SliderImg from 'src/shared/assets/sliderImg.jpg';
 import { SwiperSlide, Swiper } from 'swiper/react';
+import Image from 'react-image-webp';
 import React from 'react';
 import 'swiper/css';
 
@@ -91,42 +92,42 @@ export const Clients = () => {
                 >
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                     <SwiperSlide style={{padding:'4px'}}>
                         <Box height='125px' shadow="base" px="70px" w="300px" py="50px">
-                            <Image src={SliderImg} />
+                            <Image webp={SliderImg} src={SliderImg} alt="alt" />
                         </Box>
                     </SwiperSlide>
                 </Swiper>

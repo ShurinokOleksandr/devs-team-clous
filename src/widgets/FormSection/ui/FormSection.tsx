@@ -1,6 +1,7 @@
-import { Container, VStack, HStack, Image } from '@chakra-ui/react';
+import { Container, VStack, HStack } from '@chakra-ui/react';
 import { ContactForm } from 'src/features/ContactForm';
 import ContactImg from 'src/shared/assets/form.jpg';
+import Image from 'react-image-webp';
 import React from 'react';
 
 import { Clients } from './Clients';
@@ -9,7 +10,7 @@ export const FormSection = () => {
     return (
         <Container maxWidth="container.xl" position="relative" my="60px" px={0} >
             <HStack flexDirection={{ base: "column", xl: 'row' }} mb='100px' >
-                <Image src={ContactImg} />
+                <Image webp={ContactImg} src={ContactImg} />
                 <VStack
                     position={{base:'static',xl:'absolute'}}
                     height={{base:'full',xl:'570px' }}

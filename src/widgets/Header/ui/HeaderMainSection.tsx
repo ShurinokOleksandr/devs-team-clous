@@ -1,4 +1,4 @@
-import { Container, VStack, Button, Image, Text, Flex, Box } from '@chakra-ui/react';
+import { Container, Button, VStack,Image, Flex,Text, Box } from '@chakra-ui/react';
 import BgImg from 'src/shared/assets/bg.jpg';
 import React from 'react';
 
@@ -44,9 +44,9 @@ export const HeaderMainSection = () => {
                             <Image
                                 position={{ base:'static',xl:'absolute' }}
                                 top={['10%','10%','10%','10%','0%']}
-                                w={{base:'full',md:"auto"}}
                                 right={{base:'20%',xl:"0"}}
-                                src={BgImg}
+                                w={{base:'full',md:"auto"}}
+                                 src={BgImg}
                                 zIndex={1}
                             />
                             <Box
