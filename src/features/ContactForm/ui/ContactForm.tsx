@@ -61,7 +61,7 @@ export const ContactForm = () => {
                                                 color=" border"
                                                 rounded="4px"
                                                 type="text"
-                                                key="name"
+                                                id="name"
                                                 h="56px"
                                                 {...register("name", { minLength: { message: 'Minimum length should be 4', value: 4 }, required: true, })}
                                             />
@@ -82,7 +82,7 @@ export const ContactForm = () => {
                                         <InputGroup textAlign="center">
                                             <Input
                                                 borderColor=" border"
-                                                key="phoneNumber"
+                                                id="phoneNumber"
                                                 rounded="4px"
                                                 type="tel"
                                                 h="56px"
@@ -120,7 +120,7 @@ export const ContactForm = () => {
                                             <Input borderColor="border"
                                                    rounded="4px"
                                                    type="email"
-                                                   key="email" h="56px"
+                                                   id="email" h="56px"
                                                    {...register("email", { required: true })}
                                                    placeholder='Email *'
                                                    color="border"
@@ -142,8 +142,8 @@ export const ContactForm = () => {
                                     <GridItem colSpan={{base:4,md:2 }}>
                                         <InputGroup textAlign="center">
                                             <Input borderColor="border"
-                                                   key="company"
                                                    rounded="4px"
+                                                   id="company"
                                                    h="56px"
                                                    {...register("company", { required: true })}
                                                    placeholder='Ваша компанія'
@@ -166,8 +166,8 @@ export const ContactForm = () => {
                                     <GridItem colSpan={4}>
                                         <InputGroup textAlign="center">
                                             <Textarea
-                                                key="reviews"
                                                 resize="none"
+                                                id="reviews"
                                                 {...register("reviews", { required: true })}
                                                 placeholder='Залишіть повідомлення'
                                                 borderColor="border"
