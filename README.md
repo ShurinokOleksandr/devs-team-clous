@@ -77,7 +77,7 @@ Project is created with:
     </td>
     <td align="center" width="110" height="90"> 
       <a href="#debabin-stack">
- <img src="https://vitejs.dev/logo.svg" alt="Vite" width="100">      </a>
+ <img src="https://vitejs.dev/logo.svg" alt="Vite" width="100" height='50px'>      </a>
       <br>Vite
     </td>
         <td align="center" width="110" height="90"> 
