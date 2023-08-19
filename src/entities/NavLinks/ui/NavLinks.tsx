@@ -8,6 +8,7 @@ export const NavLinks = () => {
 			{
 				Links.map(({name,href}) =>
 					<ListItem
+						aria-describedby="list"
 						_hover={{color:'gray'}}
 						key={name}
 					>

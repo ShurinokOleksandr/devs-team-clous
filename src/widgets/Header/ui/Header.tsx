@@ -65,6 +65,7 @@ export  const Header = () => {
                             fontWeight="medium"
                             lineHeight="18px"
                             fontSize="15px"
+                            role="listbox"
                             color="white"
                             gap="60px"
                         >

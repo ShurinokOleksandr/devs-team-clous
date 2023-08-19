@@ -23,8 +23,8 @@ export const Lang = () => {
 			size='xs'
 			ref={ref}
 		>
-			<option style={{ background: 'black', padding: '20px'   }} value='option1' label="UA">UA</option>
-			<option style={{ background: 'black', padding: '20px'    }} value='option2' label="EN">EN</option>
+			<option style={{ background: 'black', padding: '5px'   }} value='option1' label="UA">UA</option>
+			<option style={{ background: 'black', padding: '5px'    }} value='option2' label="EN">EN</option>
 		</Select>
 	);
 };
