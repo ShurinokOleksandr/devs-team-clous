@@ -1,6 +1,7 @@
-import { extendTheme } from "@chakra-ui/react";
-import "@fontsource/exo-2";
-const theme = extendTheme({
+import { extendTheme } from '@chakra-ui/react';
+import '@fontsource/exo-2';
+
+export const theme = extendTheme({
     brand: {
         titleSecond:'#282828',
         titleMain:'#1E1E1E',
@@ -17,4 +18,3 @@ const theme = extendTheme({
     },
 });
 
-export default theme;

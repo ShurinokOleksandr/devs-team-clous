@@ -3,11 +3,6 @@ import {Container, HStack, Center, Button, Text, Box} from "@chakra-ui/react";
 import VideoImg from "src/shared/assets/form.jpg";
 import React from 'react';
 
-
-
-
-
-
 export const MainVideoSection = () => {
 	return (
 		<Container maxWidth="container.xl" py="100px" px={0} >

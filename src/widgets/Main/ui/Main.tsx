@@ -1,9 +1,9 @@
-import { MainAboutFirstSection } from 'src/widgets/Main/ui/MainAboutSection';
-import { HeaderMainSection } from 'src/widgets/Header/ui/HeaderMainSection';
 import { MainTextAbout } from 'src/shared/lib/lists/MainTextAbout';
 import { Container, Text, Box } from '@chakra-ui/react';
 import React from 'react';
 
+import { MainAboutFirstSection } from './MainAboutSection';
+import { HeaderMainSection } from './HeaderMainSection';
 import { MainVideoSection } from './MainVideoSection';
 
 export function Main() {

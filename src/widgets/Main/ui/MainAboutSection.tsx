@@ -55,8 +55,6 @@ export const MainAboutFirstSection = ({
 						alt="alt"
 					/>
 				</Box>
-				
-				{/*<Image objectFit='cover' src={image}   w="full" />*/}
 			</HStack>
 		</Container>
 	);
