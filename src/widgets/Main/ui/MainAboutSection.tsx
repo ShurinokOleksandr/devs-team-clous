@@ -43,8 +43,8 @@ export const MainAboutFirstSection = ({
 						</Text>
 					</Box>
 				</VStack>
-				
-				<Image objectFit='cover' src={image}    />
+			 
+				<Image objectFit='cover' src={image}   w="full" />
 			</HStack>
 		</Container>
 	);
