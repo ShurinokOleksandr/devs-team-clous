@@ -77,7 +77,7 @@ Project is created with:
     </td>
     <td align="center" width="110" height="90"> 
       <a href="#debabin-stack">
- <img src="	https://vitejs.dev/logo.svg" alt="Vite" width="100">      </a>
+ <img src="https://vitejs.dev/logo.svg" alt="Vite" width="100">      </a>
       <br>Vite
     </td>
         <td align="center" width="110" height="90"> 
@@ -92,7 +92,7 @@ Project is created with:
       </a>
       <br>Swiper
     </td>
-    <td align="center" width="310" height="90"> 
+    <td align="center" width="210" height="90"> 
       <a href="#debabin-stack">
         <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.png" width="36" height="36" alt="playwright" />
       </a>
