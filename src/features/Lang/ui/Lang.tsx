@@ -12,7 +12,7 @@ export const Lang = () => {
 	})
 	return (
 		<Select
-			icon={<SelectArrow transform={`${isSelectOpen ? 'rotate(180)' : ''} `} />}
+			icon={<SelectArrow transform={`${isSelectOpen ? 'rotate(180)' : ''}`}  />}
 			onClick={() => setIsSelectOpen(!isSelectOpen)}
 			color='white'
 			fontSize={15}

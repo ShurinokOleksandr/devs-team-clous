@@ -7,13 +7,17 @@ export const Title = ({width,text,...props}:TitleType) => {
 	return (
 		<Text
 			{...props}
-			width={width || {base:'full',xl:'400px'}}
+			width={width || {base:'full',xl:'434px'}}
 			fontSize={{base:'35px',lg:'44px'}}
 			textTransform="uppercase"
+			letterSpacing="0.03em"
+			lineHeight="32px"
 			fontFamily="DAMN"
+			color='#282828'
 		>
 			{text}
 		</Text>
 	);
 };
+
 

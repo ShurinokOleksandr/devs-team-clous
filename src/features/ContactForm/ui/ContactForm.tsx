@@ -28,17 +28,17 @@ export const ContactForm = () => {
     const [isSentForm,setIsSentForm] = useState(false)
     const { formState: { errors }, handleSubmit, register, reset } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = data => {
-        setIsSentForm(isSentForm)
+        setIsSentForm(true)
         console.log(data)
         reset()
     };
     
     return (
-        <Box bgColor="white">
+        <Box lineHeight="28px" bgColor="white">
             {
                 !isSentForm ?
                     <>
-                        <Text textTransform="uppercase" fontFamily="DAMN" fontSize="44px" >
+                        <Text textTransform="uppercase" fontFamily="DAMN" fontSize="44px" mb="10px">
                             Зв'язатися з нами
                         </Text>
                         <Text fontFamily="Exo 2">
@@ -56,9 +56,9 @@ export const ContactForm = () => {
                                     <GridItem colSpan={{base:4,md:2 }}>
                                         <InputGroup textAlign="center">
                                             <Input
-                                                borderColor="brand.border"
                                                 placeholder="Ваше імʼя *"
-                                                color="brand.border"
+                                                borderColor=" border"
+                                                color=" border"
                                                 rounded="4px"
                                                 type="text"
                                                 h="56px"
@@ -80,7 +80,7 @@ export const ContactForm = () => {
                                     <GridItem colSpan={{base:4,md:2 }}>
                                         <InputGroup textAlign="center">
                                             <Input
-                                                borderColor="brand.border"
+                                                borderColor=" border"
                                                 rounded="4px"
                                                 type="tel"
                                                 h="56px"
@@ -97,7 +97,7 @@ export const ContactForm = () => {
                                                     required: true,
                                                 })}
                                                 placeholder='Номер телефону *'
-                                                color="brand.border"
+                                                color="border"
                                             />
                                             {
                                                 errors.phoneNumber &&
@@ -115,12 +115,12 @@ export const ContactForm = () => {
                                     </GridItem>
                                     <GridItem colSpan={{base:4,md:2 }}>
                                         <InputGroup textAlign="center">
-                                            <Input borderColor="brand.border"
+                                            <Input borderColor="border"
                                                    rounded="4px"
                                                    type="email" h="56px"
                                                    {...register("email", { required: true })}
                                                    placeholder='Email *'
-                                                   color="brand.border"
+                                                   color="border"
                                             />
                                             {
                                                 errors.email &&
@@ -138,12 +138,12 @@ export const ContactForm = () => {
                                     </GridItem>
                                     <GridItem colSpan={{base:4,md:2 }}>
                                         <InputGroup textAlign="center">
-                                            <Input borderColor="brand.border"
+                                            <Input borderColor="border"
                                                    rounded="4px"
                                                    h="56px"
                                                    {...register("company", { required: true })}
                                                    placeholder='Ваша компанія'
-                                                   color="brand.border"
+                                                   color="border"
                                             />
                                             {
                                                 errors.company && <InputRightElement  top="13%">
@@ -165,7 +165,7 @@ export const ContactForm = () => {
                                                 resize="none"
                                                 {...register("reviews", { required: true })}
                                                 placeholder='Залишіть повідомлення'
-                                                borderColor="brand.border"
+                                                borderColor="border"
                                                 rounded="4px" h="118px"
                                             />
                                             {

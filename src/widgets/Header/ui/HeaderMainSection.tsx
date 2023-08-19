@@ -11,7 +11,6 @@ export const HeaderMainSection = () => {
             fontFamily="Exo 2"
             bgColor="black"
             color="white"
-            as="header"
             pb="30px"
         >
             <Container  height={[450,620,750,750]}  maxWidth="container.xl" position="relative" mx="auto" px={0}>
@@ -28,12 +27,15 @@ export const HeaderMainSection = () => {
                             <VStack  display="flex" align="start" zIndex={1001}>
                                 <Text
                                     textAlign={{base:"center",xl:'start'}}
-                                    fontSize={{base:"20px",xl:"20px"}}
                                     w={{ base:"full",md:'700px' }}
                                     left={{ xl:'10px',base:0 }}
                                     mb={{xl:"500px",base:0}}
                                     position="relative"
                                     fontWeight="medium"
+                                    fontFamily="Exo 2"
+                                    lineHeight="28px"
+                                    color="lightGray"
+                                    fontSize="20px"
                                     opacity="60%"
                                 >
                                     Сильні Знання. Могутні Результати. Ваша Конкурентна Перевага.
@@ -47,9 +49,22 @@ export const HeaderMainSection = () => {
                                 src={BgImg}
                                 zIndex={1}
                             />
-                            <Box  width={{'2xl':"625px",base:'full',lg:'500px'}} ml={{base:' 0px',lg:"30px"}} mb="150px" >
-                                <Button height="60px" w="full">
-                                    <Text  >
+                            <Box
+                                width={{'2xl':"625px",base:'full',lg:'500px'}}
+                                ml={{base:' 0px',lg:"30px"}}
+                                textTransform="uppercase"
+                                letterSpacing="0.1px"
+                                fontWeight="medium"
+                                lineHeight="18px"
+                                fontSize="15px"
+                                color="black"
+                                mb="150px"
+                            >
+                                <Button
+                                    height="60px"
+                                    w="full"
+                                >
+                                    <Text textTransform="uppercase" >
                                         Зв'язатися з нами
                                     </Text>
                                 </Button>

@@ -7,6 +7,11 @@ import { SwiperSlide, Swiper } from 'swiper/react';
 import React from 'react';
 import 'swiper/css';
 
+
+
+
+
+
 export  const CaseSwiper = () => {
 	const { onChangeSlide,isStart,isEnd} = useSwiperClick()
 	const  {clickNext,clickPrev,swiperRef} = useChangeSwiperSlide()
@@ -22,15 +27,34 @@ export  const CaseSwiper = () => {
 					<Container  maxWidth="container.xl" fontFamily="Exo 2" my="60px" px={0} >
 						<HStack flexDirection={{ xl: 'row-reverse', base: "column" }} align={{base:'start',xl:'center'}}   columnGap="30px"   >
 							<Box  width={{basa:'70%',xl:'55%'}}>
-								<Text fontSize="20px">
+								<Text
+									textTransform="uppercase"
+									fontSize="20px"
+								
+								>
 									Результати
 								</Text>
 								<UnorderedList color="lightGray" pl="20px">
-									<ListItem my="25px">Збільшення частоти позитивних згадок про бренд в соціальних мережах та ЗМІ.</ListItem>
+									<ListItem
+										lineHeight="28px"
+										my="25px"
+									>
+										Збільшення частоти позитивних згадок про бренд в соціальних мережах та ЗМІ.
+									</ListItem>
 									<Divider />
-									<ListItem my="25px">Час відгуку на негативні згадки скоротився з 48 годин до менше 6 годин.</ListItem>
+									<ListItem
+										lineHeight="28px"
+										my="25px"
+									>
+										Час відгуку на негативні згадки скоротився з 48 годин до менше 6 годин.
+									</ListItem>
 									<Divider />
-									<ListItem my="25px">Зниження кількості негативних коментарів на 30% протягом перших двох місяців співпраці.</ListItem>
+									<ListItem
+										lineHeight="28px"
+										my="25px"
+									>
+										Зниження кількості негативних коментарів на 30% протягом перших двох місяців співпраці.
+									</ListItem>
 								</UnorderedList>
 							</Box>
 							<Image src={AboutImg} />
@@ -87,7 +111,7 @@ export  const CaseSwiper = () => {
 										<Text fontFamily="Exo 2">
 											Збільшення частоти позитивних згадок про бренд в соціальних мережах та ЗМІ.
 										</Text>
-										</ListItem>
+									</ListItem>
 									<Divider />
 									<ListItem my="25px">Час відгуку на негативні згадки скоротився з 48 годин до менше 6 годин.</ListItem>
 									<Divider />

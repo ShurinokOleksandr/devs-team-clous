@@ -4,8 +4,8 @@ import React from 'react';
 
 export const FormResult = () => {
     return (
-        <VStack justify="center" w="740px" h="570px" >
-            <Box w={{ base:"330px",md:'470px' }} m={10}>
+        <VStack h={{base:'full',lg: '570px' }} w={{ base:'full',lg:'640px' }} justify="center" >
+            <Box   m={5}>
                 <Title
                     text=" Повідомлення надіслано"
                     textAlign="center"

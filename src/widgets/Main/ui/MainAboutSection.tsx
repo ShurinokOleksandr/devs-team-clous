@@ -16,19 +16,28 @@ export const MainAboutFirstSection = ({
 	return (
 		<Container maxWidth="container.xl"  px={0} >
 			<HStack flexDirection={{ base: "column", xl: row }}  columnGap="96px"  mb="70px"  >
-				<VStack width={{ base: 'full', xl: '60%' }} rowGap="60px" >
+				<VStack width={{ base: 'full', xl: '450px' }} rowGap="60px" >
 					<Box>
-						<Title text={firstTitle} />
+						<Title
+							text={firstTitle}
+							mb="10px"
+						/>
 						<Text
 							fontFamily="Exo 2"
+							lineHeight="28px"
+							fontSize="16px"
+							color="#1E1E1E"
 						>
 							{firstParagraph}
 						</Text>
 					</Box>
 					<Box>
-						<Title text={secondTitle} />
+						<Title text={secondTitle} mb="10px"/>
 						<Text
 							fontFamily="Exo 2"
+							lineHeight="28px"
+							color="titleMain"
+							fontSize="16px"
 						>
 							{secondParagraph}
 						</Text>
@@ -39,4 +48,6 @@ export const MainAboutFirstSection = ({
 		</Container>
 	);
 };
+
+
 

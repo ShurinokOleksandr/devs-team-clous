@@ -12,8 +12,9 @@ export const FormSection = () => {
                 <Image src={ContactImg} />
                 <VStack
                     position={{base:'static',xl:'absolute'}}
-                    right={{base: 'auto', lg: '0px'}}
+                    height={{base:'full',xl:'570px' }}
                     width={{base:'full',xl:'700px' }}
+                    right={{base: 'auto', lg: '0px'}}
                     bgColor="white"
                     zIndex={1}
                     p="30px"

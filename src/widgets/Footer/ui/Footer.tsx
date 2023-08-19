@@ -87,6 +87,7 @@ export const Footer = () => {
                 <Center
                     opacity='30%'
                     color='white'
+                    pb="33px"
                 >
                     OSINT Conception, 2021. Всі права захищені.
                 </Center>
