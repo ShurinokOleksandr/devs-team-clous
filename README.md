@@ -2,6 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Features](#features)
 
 ## General info
 <a href="https://github.com/siberiacancode">
@@ -12,8 +13,7 @@
 
 ## Technologies
 Project is created with:
-> General
-
+ 
 <table width='100%'>
   <tr>
     <td align="center" width="110" height="90">
@@ -108,10 +108,45 @@ Project is created with:
 </table>
 
 ## Setup
-To run this project, install it locally using npm:
+ 
+### Prerequisites
 
+**Node version 18.x.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/AntonioErdeljac/next13-ai-saas.git
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+
+### Install packages
+
+```shell
+npm i
 ```
+
+### Start the app
+
+```shell
+npm run dev
+```
+
+## Features
+
+- **Responsive and Adaptive CSS Layout**: Developed a fully responsive and adaptive user interface that seamlessly adjusts across various devices.
+
+- **Scroll Animation with Frame Motion**: Implemented engaging animations and effects using Frame Motion, enhancing user experience through dynamic content elevation on scroll.
+
+- **Reusable and Maintainable Component Architecture**: Engineered reusable and maintainable components like Title, MainSection, ensuring scalability and ease of maintenance.
+
+- **Dynamic Swiper Integration**: Integrated two distinct and fully responsive swiper components, catering to different user interaction needs.
+
+- **Client-Side Form Validation using react-hook-form**: Implemented form validation and processing on the client side using the react-hook-form library, ensuring user input accuracy.
+
+- **Features Developed Using the Sliced Design Methodology**: Employed the Sliced Design methodology to build and optimize features, promoting efficient development and comprehensive functionality.
+
+
+
+<div align="center">
+  Developed with ❤️
+</div>
