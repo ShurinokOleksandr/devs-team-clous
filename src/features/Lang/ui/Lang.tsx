@@ -14,16 +14,16 @@ export const Lang = () => {
 		<Select
 			icon={<SelectArrow transform={`${isSelectOpen ? 'rotate(180)' : ''}`}  />}
 			onClick={() => setIsSelectOpen(!isSelectOpen)}
-			color='white'
-			fontSize={15}
 			border="none"
+			fontSize={15}
+			color='white'
 			height={27}
 			width={20}
-			size='xs'
 			ref={ref}
+			size='xs'
 		>
-			<option style={{ background: 'black', padding: '20px'   }} value='option1'>UA</option>
-			<option style={{ background: 'black', padding: '20px'    }} value='option2'>EN</option>
+			<option style={{ background: 'black', padding: '20px'   }} value='option1' label="select">UA</option>
+			<option style={{ background: 'black', padding: '20px'    }} value='option2' label="select">EN</option>
 		</Select>
 	);
 };
