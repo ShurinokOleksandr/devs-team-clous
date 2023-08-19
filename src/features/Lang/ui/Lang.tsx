@@ -19,7 +19,6 @@ export const Lang = () => {
 			fontSize={15}
 			border="none"
 			height={27}
-			role="list"
 			width={20}
 			size='xs'
 			ref={ref}
