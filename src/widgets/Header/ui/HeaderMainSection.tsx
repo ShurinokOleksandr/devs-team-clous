@@ -46,8 +46,9 @@ export const HeaderMainSection = () => {
                                 top={['10%','10%','10%','10%','0%']}
                                 right={{base:'20%',xl:"0"}}
                                 w={{base:'full',md:"auto"}}
-                                 src={BgImg}
+                                src={BgImg}
                                 zIndex={1}
+                                alt="alt"
                             />
                             <Box
                                 width={{'2xl':"625px",base:'full',lg:'500px'}}

@@ -62,6 +62,7 @@ export  const CaseSwiper = () => {
 							<Image
 								webp={AboutImg}
 								src={AboutImg}
+								alt="alt"
 							/>
 							
 						</HStack>
@@ -103,6 +104,7 @@ export  const CaseSwiper = () => {
 							<Image
 								webp={AboutImg}
 								src={AboutImg}
+								alt="alt"
 							/>
 						
 						</HStack>
@@ -144,6 +146,7 @@ export  const CaseSwiper = () => {
 							<Image
 								webp={AboutImg}
 								src={AboutImg}
+								alt="alt"
 							/>
 						
 						</HStack>
@@ -185,6 +188,7 @@ export  const CaseSwiper = () => {
 							<Image
 								webp={AboutImg}
 								src={AboutImg}
+								alt="alt"
 							/>
 						
 						</HStack>
@@ -226,6 +230,7 @@ export  const CaseSwiper = () => {
 							<Image
 								webp={AboutImg}
 								src={AboutImg}
+								alt="alt"
 							/>
 						
 						</HStack>

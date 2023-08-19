@@ -10,7 +10,7 @@ export const FormSection = () => {
     return (
         <Container maxWidth="container.xl" position="relative" my="60px" px={0} >
             <HStack flexDirection={{ base: "column", xl: 'row' }} mb='100px' >
-                <Image webp={ContactImg} src={ContactImg} />
+                <Image webp={ContactImg} src={ContactImg} alt="alt" />
                 <VStack
                     position={{base:'static',xl:'absolute'}}
                     height={{base:'full',xl:'570px' }}

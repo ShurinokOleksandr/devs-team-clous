@@ -48,10 +48,11 @@ export const MainAboutFirstSection = ({
 					width={{base:'full',md:'700px'}}
 				>
 					<Image
-						width="full"
 						//@ts-ignore
 						webp={image}
+						width="full"
 						src={image}
+						alt="alt"
 					/>
 				</Box>
 				

@@ -39,8 +39,8 @@ export const MainVideoSection = () => {
 				bgImage={VideoImg}
 				bgSize="cover"
 				rowGap="20px"
-				h="558px"
 				mt="30px"
+				h="558px"
 				w="full"
 			>
 				<Text
