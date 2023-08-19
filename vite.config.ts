@@ -13,5 +13,5 @@ export default defineConfig({
     }
   },
   
-  plugins: [react(),  mdx(), eslint(), svgr()]
+  plugins: [react(), eslint(), svgr()]
 }) ;

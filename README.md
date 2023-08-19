@@ -67,6 +67,45 @@ Project is created with:
   </tr> 
 </table>
 
+<table width='100%'>
+  <tr>
+     <td align="center" width="110" height="90"> 
+      <a href="#debabin-stack" >
+        <img src="https://avatars.githubusercontent.com/u/54212428?s=48&v=4" color='gray``' width="36" height="36" alt="Jest" />
+      </a>
+      <br>Chakra UI
+    </td>
+    <td align="center" width="110" height="90"> 
+      <a href="#debabin-stack">
+ <img src="	https://vitejs.dev/logo.svg" alt="Vite" width="100">      </a>
+      <br>Vite
+    </td>
+        <td align="center" width="110" height="90"> 
+      <a href="#debabin-stack" >
+        <img src="https://cdn.worldvectorlogo.com/logos/eslint.svg" width="36" height="36" alt="storybook" />
+      </a>
+      <br>Eslint
+    </td>
+    <td align="center" width="110" height="90"> 
+      <a href="#debabin-stack">
+        <img src="https://swiperjs.com/images/swiper-logo.svg" width="36" height="36" alt="cypress" />
+      </a>
+      <br>Swiper
+    </td>
+    <td align="center" width="310" height="90"> 
+      <a href="#debabin-stack">
+        <img src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.png" width="36" height="36" alt="playwright" />
+      </a>
+      <br>react-hook-form
+    </td>
+    <td align="center" width="210" height="90"> 
+      <a href="#debabin-stack">
+        <img src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg" width="36" height="36" alt="puppeteer" />
+      </a>
+      <br>framer-motion
+    </td>
+  </tr> 
+</table>
 
 ## Setup
 To run this project, install it locally using npm:
