@@ -49,7 +49,16 @@ export const MainVideoSection = () => {
 				>
 					ДИВІТЬСЯ ВІДЕО, ЯК ЦЕ ПРАЦЮЄ
 				</Text>
-				<Button name="playBtn" rounded="full" h="78px" w="78px">
+				<Button
+					aria-labelledby="labeldiv"
+					aria-label="Name"
+					rounded="full"
+					name="playBtn"
+					title="Title"
+					w="78px"
+					h="78px"
+					id="al"
+				>
 					<Play width="20px" />
 				</Button>
 			</Center>
