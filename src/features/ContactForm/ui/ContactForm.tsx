@@ -45,15 +45,15 @@ export const ContactForm = () => {
                             Маєте запитання або зацікавлені в наших послугах OSINT? Залиште свої контактні дані, і наша команда експертів з радістю допоможе вам.
                         </Text>
                         <form  onSubmit={handleSubmit(onSubmit)} autoComplete="off">
-                            <FormControl isInvalid={!!errors.name}  >
-                                <Grid
-                                    templateColumns='repeat(4, 1fr)'
-                                    templateRows='repeat(2, 1fr)'
-                                    columnGap="30px"
-                                    rowGap="15px"
-                                    my="30px"
-                                >
-                                    <GridItem colSpan={{base:4,md:2 }}>
+                            <Grid
+                                templateColumns='repeat(4, 1fr)'
+                                templateRows='repeat(2, 1fr)'
+                                columnGap="30px"
+                                rowGap="15px"
+                                my="30px"
+                            >
+                                <GridItem colSpan={{base:4,md:2 }}>
+                                    <FormControl isInvalid={!!errors.name}>
                                         <InputGroup textAlign="center">
                                             <Input
                                                 placeholder="Ваше імʼя *"
@@ -77,8 +77,10 @@ export const ContactForm = () => {
                                                 {errors.name && errors.name.message || 'Write down name!'}
                                             </Text>
                                         </FormErrorMessage>
-                                    </GridItem>
-                                    <GridItem colSpan={{base:4,md:2 }}>
+                                    </FormControl>
+                                </GridItem>
+                                <GridItem colSpan={{base:4,md:2 }}>
+                                    <FormControl isInvalid={!!errors.phoneNumber}>
                                         <InputGroup textAlign="center">
                                             <Input
                                                 borderColor=" border"
@@ -114,8 +116,10 @@ export const ContactForm = () => {
                                                 {errors.phoneNumber && errors.phoneNumber.message || 'Write down phone!'}
                                             </Text>
                                         </FormErrorMessage>
-                                    </GridItem>
-                                    <GridItem colSpan={{base:4,md:2 }}>
+                                    </FormControl>
+                                </GridItem>
+                                <GridItem colSpan={{base:4,md:2 }}>
+                                    <FormControl isInvalid={!!errors.email}>
                                         <InputGroup textAlign="center">
                                             <Input borderColor="border"
                                                    rounded="4px"
@@ -131,15 +135,16 @@ export const ContactForm = () => {
                                                     <UnValidIcon   />
                                                 </InputRightElement>
                                             }
-                                        
                                         </InputGroup>
                                         <FormErrorMessage>
                                             <Text ml={2}>
                                                 {errors.email && errors.email.message || "Write down email!"}
                                             </Text>
                                         </FormErrorMessage>
-                                    </GridItem>
-                                    <GridItem colSpan={{base:4,md:2 }}>
+                                    </FormControl>
+                                </GridItem>
+                                <GridItem colSpan={{base:4,md:2 }}>
+                                    <FormControl isInvalid={!!errors.company}>
                                         <InputGroup textAlign="center">
                                             <Input borderColor="border"
                                                    key="company"
@@ -156,47 +161,45 @@ export const ContactForm = () => {
                                             }
                                         
                                         </InputGroup>
-                                        
                                         <FormErrorMessage>
                                             <Text ml={2}>
                                                 {errors.company && errors.company.message|| "Write down company!"}
                                             </Text>
                                         </FormErrorMessage>
-                                    </GridItem>
-                                    <GridItem colSpan={4}>
-                                        <InputGroup textAlign="center">
-                                            <Textarea
-                                                key="reviews"
-                                                resize="none"
-                                                {...register("reviews", { required: true })}
-                                                placeholder='Залишіть повідомлення'
-                                                borderColor="border"
-                                                rounded="4px" h="118px"
-                                            />
-                                            {
-                                                errors.reviews && <InputRightElement  top="10%">
-                                                    <UnValidIcon   />
-                                                </InputRightElement>
-                                            }
-                                        
-                                        </InputGroup>
-                                        
-                                        <FormErrorMessage>
-                                            <Text ml={2}>
-                                                {errors.reviews && errors.reviews.message|| "Write down reviews!"}
-                                            </Text>
-                                        </FormErrorMessage>
-                                    </GridItem>
-                                </Grid>
-                            </FormControl>
+                                    </FormControl>
+                                </GridItem>
+                                <GridItem colSpan={4}>
+                                    <InputGroup textAlign="center">
+                                        <Textarea
+                                            key="reviews"
+                                            resize="none"
+                                            {...register("reviews", { required: true })}
+                                            placeholder='Залишіть повідомлення'
+                                            borderColor="border"
+                                            rounded="4px" h="118px"
+                                        />
+                                        {
+                                            errors.reviews && <InputRightElement  top="10%">
+                                                <UnValidIcon   />
+                                            </InputRightElement>
+                                        }
+                                    
+                                    </InputGroup>
+                                    
+                                    <FormErrorMessage>
+                                        <Text ml={2}>
+                                            {errors.reviews && errors.reviews.message|| "Write down reviews!"}
+                                        </Text>
+                                    </FormErrorMessage>
+                                </GridItem>
+                            </Grid>
                             <Button _hover={{bgColor:'blue.500'}} display="block" bgColor="blue" color="white" type="submit" w="full">
                                 Відправити повідомлення
                             </Button>
                         </form>
                     </>
-                    : <FormResult />
+                    : <FormResult setIsSentForm={setIsSentForm} />
             }
         </Box>
     );
 };
-
