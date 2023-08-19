@@ -1,7 +1,8 @@
+import react from '@vitejs/plugin-react';
 import eslint from 'vite-plugin-eslint';
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import svgr from 'vite-plugin-svgr'
+import { defineConfig } from 'vite';
+import svgr from 'vite-plugin-svgr';
+import mdx from '@mdx-js/rollup';
 
 
 // https://vitejs.dev/config/
@@ -11,5 +12,6 @@ export default defineConfig({
       src:'/src'
     }
   },
-  plugins: [react(), eslint(), svgr()]
-});
+  
+  plugins: [react(),  mdx(), eslint(), svgr()]
+}) ;
