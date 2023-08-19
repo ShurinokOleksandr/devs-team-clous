@@ -14,13 +14,14 @@ export const Lang = () => {
 		<Select
 			icon={<SelectArrow transform={`${isSelectOpen ? 'rotate(180)' : ''}`}  />}
 			onClick={() => setIsSelectOpen(!isSelectOpen)}
-			border="none"
-			fontSize={15}
+			aria-label="Lang"
 			color='white'
+			fontSize={15}
+			border="none"
 			height={27}
 			width={20}
-			ref={ref}
 			size='xs'
+			ref={ref}
 		>
 			<option style={{ background: 'black', padding: '20px'   }} value='option1' label="select">UA</option>
 			<option style={{ background: 'black', padding: '20px'    }} value='option2' label="select">EN</option>

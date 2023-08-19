@@ -49,7 +49,7 @@ export const MainVideoSection = () => {
 				>
 					ДИВІТЬСЯ ВІДЕО, ЯК ЦЕ ПРАЦЮЄ
 				</Text>
-				<Button rounded="full" h="78px" w="78px">
+				<Button name="playBtn" rounded="full" h="78px" w="78px">
 					<Play width="20px" />
 				</Button>
 			</Center>
