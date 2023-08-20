@@ -34,9 +34,9 @@ Project is created with:
       </a>
       <br>Css3
     </td>
-     <td align="center" width="110" height="90"> 
+     <td align="center" width="150" height="90"> 
       <a href="#debabin-stack" >
-        <img src="https://w7.pngwing.com/pngs/235/872/png-transparent-react-computer-icons-redux-javascript-others-logo-symmetry-nodejs-thumbnail.pnghttps://w7.pngwing.com/pngs/235/872/png-transparent-react-computer-icons-redux-javascript-others-logo-symmetry-nodejs-thumbnail.png" width="36" height="36" alt="react" />
+        <img src="https://camo.githubusercontent.com/77f6f4ed2bcf023…4732f323032302f30392f72656163742d6c6f676f2e706e67" width="36" height="36" alt="react" />
       </a>
       <br>React 
     </td>
