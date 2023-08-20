@@ -14,7 +14,7 @@ export const Lang = () => {
 		<Select
 			icon={<SelectArrow transform={`${isSelectOpen ? 'rotate(180)' : ''}`}  />}
 			onClick={() => setIsSelectOpen(!isSelectOpen)}
-			aria-label="Lang"
+ 			aria-label="Lang"
 			color='white'
 			fontSize={15}
 			border="none"

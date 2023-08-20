@@ -44,7 +44,6 @@ export function DrawerLinks() {
 				<DrawerContent bgColor="black" color="white">
 					<DrawerCloseButton />
 					<DrawerHeader>Навігація</DrawerHeader>
-
 					<DrawerBody  >
 						<List bgColor="black"   marginX="auto"  width="full" >
 							<Flex justify="space-between" direction='column' align='center' rowGap={5}>

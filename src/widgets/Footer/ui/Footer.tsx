@@ -88,6 +88,7 @@ export const Footer = () => {
                                 Заповніть форму і ми звʼяжемося з вами якнайшвидше.
                             </Text>
                             <Button
+                                onClick={() => alert('Якось потім :)')}
                                 _hover={{bgColor:'blue.400'}}
                                 textTransform='uppercase'
                                 userSelect="none"

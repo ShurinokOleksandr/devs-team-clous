@@ -45,6 +45,7 @@ export const MainVideoSection = () => {
 					ДИВІТЬСЯ ВІДЕО, ЯК ЦЕ ПРАЦЮЄ
 				</Text>
 				<Button
+					onClick={() => alert('А відео нема!')}
 					aria-labelledby="labeldiv"
 					aria-label="Name"
 					rounded="full"

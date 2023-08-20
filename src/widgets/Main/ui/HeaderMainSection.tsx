@@ -62,6 +62,7 @@ export const HeaderMainSection = () => {
                                 mb="150px"
                             >
                                 <Button
+                                    onClick={() => alert('Якось потім :)')}
                                     height="60px"
                                     w="full"
                                 >
